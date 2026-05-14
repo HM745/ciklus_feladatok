@@ -1,4 +1,4 @@
-import feladatok
+import ciklus_a
 
-feladatok.teljes(x=3)
+ciklus_a.teljes(x=3)
 

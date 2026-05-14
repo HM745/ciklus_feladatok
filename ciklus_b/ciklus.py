@@ -23,7 +23,6 @@ def megszamlalas(szamok):
         if i == 4:
             db += 1
     return print(f"4-esek száma: {db}")
-#lista = [5,2, 2,1,3,6]
 #min/max tétel 
 def legkisebb(lista): 
     min_hely = lista[0]
