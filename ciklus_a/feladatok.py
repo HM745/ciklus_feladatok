@@ -35,7 +35,7 @@ def abc_elso_hely(lista):
     for i in range(len(lista)):
         if lista[i] < lista[min_hely]:
             min_hely = i
-    return print(f"Az ABC sorrend szerinti első szó: {min_hely}")
+    return print(f"Az ABC sorrend szerinti első szó: {lista[min_hely]}")
 
 def teljes():
     szavak = param_szobekero()
