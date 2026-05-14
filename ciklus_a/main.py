@@ -1,0 +1,4 @@
+import feladatok
+
+feladatok.teljes()
+
