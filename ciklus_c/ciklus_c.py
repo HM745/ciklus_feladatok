@@ -1,18 +1,13 @@
 def bekeres():
     szo = input("Adj meg A-val kezdődő szavakat!")
-    if szo == "end":
-        print("Vége a beírásnak")
-        return "end"
     while not szo.lower().startswith("a"):
-        szo = input("Csak A-val kezdődő szót adhatsz meg!")
+        szo = input("Csak A-val kezdődő szót adhatsz meg, írd be újra!")
     return szo
 
-def parameteres():
+def parameteres(x):
     szavak = []
-    szo = bekeres()
-    while szo != "end":
-        szavak.append(szo)
-        szo = bekeres()
+    for i in range(x):
+        szavak.append(bekeres())
     return szavak
 
 def lista_kiir(szavak):
@@ -36,8 +31,8 @@ def atlag(lista):
         ossz_karakter += len(i)
     return print(round(ossz_karakter /len(lista),1))
 
-def teljes():
-    szavak = parameteres()
+def teljes(x):
+    szavak = parameteres(x)
     lista_kiir(szavak)
     print()
     leghosszabb(szavak)

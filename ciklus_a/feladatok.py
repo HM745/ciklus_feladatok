@@ -4,17 +4,11 @@ def szobekero():
         szo = input("Hibás! Adj meg egy minimum 3 karakteres szót!")
     return szo
 
-def param_szobekero():
+def param_szobekero(x):
     szavak = []
-    szo = ""  
-    while szo != "end":
-        szo = szobekero()
-        if szo != "end":
-            szavak.append(szo)
-        else: 
-            szo == "end"
-            print("Vége a szavak beírásnak!")
-    return szavak 
+    for i in range(x):
+        szavak.append(szobekero())
+    return szavak
 
 def lista_kiir(szavak):
     for i in range(len(szavak)):
@@ -37,8 +31,8 @@ def abc_elso_hely(lista):
             min_hely = i
     return print(f"Az ABC sorrend szerinti első szó: {lista[min_hely]}")
 
-def teljes():
-    szavak = param_szobekero()
+def teljes(x):
+    szavak = param_szobekero(x)
     lista_kiir(szavak)
     print()
     atlag_szohossz(szavak)

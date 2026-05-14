@@ -1,4 +1,4 @@
 import feladatok
 
-feladatok.teljes()
+feladatok.teljes(x=3)
 
