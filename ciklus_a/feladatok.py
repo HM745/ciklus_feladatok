@@ -32,7 +32,7 @@ def atlag_szohossz(lista):
 def abc_elso_hely(lista):
     # Maximum/minimum kiválasztás
     min_hely = 0
-    for i in range(1, len(lista)):
+    for i in range(len(lista)):
         if lista[i] < lista[min_hely]:
             min_hely = i
     return print(f"Az ABC sorrend szerinti első szó: {min_hely}")
