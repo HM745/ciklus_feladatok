@@ -23,7 +23,7 @@ def legnagyobb(lista):
     for i in range(len(lista)):
         if lista[i] > max_hely:
             max_hely = lista[i]
-        return print(f"Legnagyobb:{max_hely}")
+    return print(f"Legnagyobb:{max_hely}")
 
 #Megszámlálás tétel
 def megszamlalas(szamok):
